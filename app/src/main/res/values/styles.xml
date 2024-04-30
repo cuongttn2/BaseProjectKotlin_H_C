@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="circleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="roundedImage8">
+        <item name="cornerSize">@dimen/dp_8</item>
+    </style>
+    <style name="roundedImage16">
+        <item name="cornerSize">@dimen/dp_16</item>
+    </style>
+</resources>

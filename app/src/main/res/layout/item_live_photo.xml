@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="livePhoto"
+            type="com.example.baseprojectkotlin_h_c.data.model.LivePhotoModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/myLayoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_photo_width"
+        android:background="?selectableItemBackground"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dp_8"
+        android:paddingVertical="@dimen/dp_8">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/myImageViewIcon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:livePhoto="@{livePhoto}"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/roundedImage8" />
+
+        <TextView
+            android:id="@+id/myTextViewCityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{livePhoto.author}"
+            android:layout_marginStart="@dimen/dp_8"
+            android:textAppearance="?textAppearanceBody1"
+            app:layout_constraintStart_toEndOf="@+id/myImageViewIcon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

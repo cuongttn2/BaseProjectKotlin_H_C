@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_16"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:context=".ui.home.HomeFragment">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/myButtonNextScreen"
+                    style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?colorAccent"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    android:text="@string/api_sample"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/myButtonStoragePermission"
+                    style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:backgroundTint="?colorAccent"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    android:text="@string/pick_photo_sample"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/myButtonApiPaging"
+                    style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?colorAccent"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/api_paging_example"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/myButtonShowListPopup"
+                    style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?colorAccent"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/show_list_popup_menu"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="@color/white" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/myButtonShapeableImageView"
+                    style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="?colorAccent"
+                    android:paddingHorizontal="@dimen/dp_16"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/shapeable_image_view"
+                    android:textAppearance="?textAppearanceBody1"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </ScrollView>
+</layout>

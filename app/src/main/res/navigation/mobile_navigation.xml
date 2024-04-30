@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.baseprojectkotlin_h_c.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.baseprojectkotlin_h_c.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.baseprojectkotlin_h_c.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.baseprojectkotlin_h_c.ui.apisample.ApiExampleFragment"
+        android:label="LocationFragment" />
+    <action
+        android:id="@+id/action_global_locationFragment"
+        app:destination="@id/locationFragment" />
+    <fragment
+        android:id="@+id/pagingExampleFragment"
+        android:name="com.example.baseprojectkotlin_h_c.ui.apipagingexample.PagingFragment"
+        android:label="Paging Example"
+        tools:layout="@layout/fragment_recyclerview"/>
+
+    <fragment
+        android:id="@+id/shapeImageFragment"
+        android:name="com.example.baseprojectkotlin_h_c.ui.shappeableimageview.ShapeImageFragment"
+        android:label="ShapeImageFragment"
+        tools:layout="@layout/fragment_shapeableimageview"/>
+
+
+    <action
+        android:id="@+id/action_global_pagingExampleFragment"
+        app:destination="@id/pagingExampleFragment" />
+    <action
+        android:id="@+id/action_global_shapeImageFragment"
+        app:destination="@id/shapeImageFragment" />
+    <fragment
+        android:id="@+id/testSaveDataFragment"
+        android:name="com.example.baseprojectkotlin_h_c.ui.testsavedata.TestSaveDataFragment"
+        android:label="TestSaveDataFragment"
+        tools:layout="@layout/fragment_save_data"/>
+    <action
+        android:id="@+id/action_global_testSaveDataFragment"
+        app:destination="@id/testSaveDataFragment" />
+
+</navigation>
